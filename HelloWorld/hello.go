@@ -2,9 +2,15 @@ package HelloWorld
 
 import "fmt"
 
+const englishHelloPrefix = "Hello, "
+
 // print hello, world func 
 func Hello(name string) string{
-    return "Hello, " + name
+    if name == ""{
+        return englishHelloPrefix + "World"
+    }
+    
+    return englishHelloPrefix + name
 }
 
 // print hello, world
